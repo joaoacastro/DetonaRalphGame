@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>.:Detona Ralph Game:.</title>
-
+    <link rel="shortcut icon" href="src/images/favicon.jpg" type="image/x-icon">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +18,53 @@
     <link rel="stylesheet" href="src/styles/main.css" />
   </head>
   <body>
+    <main>
+      <div class="container">
+        <div class="menu">
+          <!-- div.menu-time+div.menu-score atalho para criar divs -->
+          <div class="menu-time">
+            <h3 class="time">Time Left</h3>
+            <h3 id="time-left">0</h3>
+          </div>
+
+          <div class="menu-score">
+            <h3 class="score">Your Score</h3>
+            <h3 id="score">0</h3>
+          </div>
+          <div class="menu-lives">
+            <img src="src/images/player.png" alt="player photo" height="40px" />
+            <h3>x3</h3>
+          </div>
+        </div>
+        <div class="backgorundPanel">
+          <div class="panel">
+            <!-- .panel-row>.square[id="0"]*3 atalho para criar uma div class panel-roww com 3 div class square id 0 -->
+            <div class="panel-row">
+              <div class="square" id="1"></div>
+              <div class="square" id="2"></div>
+              <div class="square" id="3"></div>
+            </div>
+  
+            <div class="panel-row">
+              <div class="square" id="4"></div>
+              <div class="square" id="5"></div>
+              <div class="square" id="6"></div>
+            </div>
+  
+            <div class="panel-row">
+              <div class="square" id="7"></div>
+              <div class="square" id="8"></div>
+              <div class="square" id="9"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      ...developed by
+      <a href="https://github.com/joaoacastro" target="_blank">JAC</a>
+    </footer>
 
     <script defer src="src/scripts/engine.js"></script>
   </body>

@@ -1,0 +1,4 @@
+*Parar o random Ralph depois do alert
+*alterar o timer para um cronometro
+*Quanto mais o tempo passa mais rapido fica o game
+*Perder vidas toda vez que der game over

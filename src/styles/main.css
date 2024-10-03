@@ -1,0 +1,111 @@
+.time,
+.score {
+  color: rgb(255, 0, 0);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.backgorundPanel {
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("../images/wall.png");
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.menu-lives {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.panel {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  height: 150px;
+  width: 150px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: rgba(203, 245, 229, 0.7);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease; /* Transição suave */
+}
+
+.square:hover {
+  transform: scale(1.07); /* Aumenta em 7% o tamanho do quadrado */
+  background-color: rgb(229, 255, 0);
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.enemy {
+  background-image: url("../images/ralph.png");
+  background-size: cover;
+  background-color: rgba(255, 0, 0);
+}
+
+footer {
+  justify-content: end;
+  padding-right: 15px;
+  text-align: end;
+  color: rgb(255, 255, 255);
+}
+
+/* Responsividade para iPhone 12 (largura 390px) */
+@media (max-width: 505px) {
+  .menu {
+    height: 80px;
+  }
+  .backgorundPanel {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .menu h3 {
+    font-size: 14px;
+  }
+
+  .square {
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+  }
+}
