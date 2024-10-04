@@ -1,3 +1,4 @@
+*Colocar botao para iniciar o jogo
 *Parar o random Ralph depois do alert
 *alterar o timer para um cronometro
 *Quanto mais o tempo passa mais rapido fica o game
